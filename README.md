@@ -1,4 +1,4 @@
-# TEMPLATE DE LIBRERIA VUE CON SOPORTE TREE SHAKING
+# Template de libreria Vue con soporte Tree Shaking
 
 Este es un template para crear una libreria de componentes vue compatible con:
 
