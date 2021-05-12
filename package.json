@@ -1,7 +1,8 @@
 {
-  "name": "@user/vlt",
+  "name": "@gemunet/vlt",
+  "repository": "git://github.com:youuser/yourepo.git",
   "libName": "vlt",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist/index.ssr.js",
   "browser": "dist/index.esm.js",
   "module": "dist/index.esm.js",
