@@ -81,7 +81,7 @@ export default [
       typescript({
         tsconfigOverride: { compilerOptions: { declaration: false } }
       }),
-      vue({ template: { optimizeSSR: true } }),
+      vue({css: false}),
       postcss({ extract: 'style.css' }),
     ],
   },
@@ -100,7 +100,7 @@ export default [
       typescript({
         tsconfigOverride: { compilerOptions: { declaration: false } }
       }),
-      vue({ template: { optimizeSSR: true } }),
+      vue({ css: false, template: { optimizeSSR: true } }),
       postcss({ extract: 'style.css' }),
     ],
   },
@@ -121,7 +121,7 @@ export default [
       typescript({
         tsconfigOverride: { compilerOptions: { declaration: false } }
       }),
-      vue(), 
+      vue({ css: false }), 
       postcss({ extract: 'style.css' })
     ],
   },
