@@ -1,0 +1,57 @@
+{
+  "name": "@user/vlt",
+  "libName": "vlt",
+  "version": "0.0.0",
+  "main": "dist/index.ssr.js",
+  "browser": "dist/index.esm.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "sideEffects": true,
+  "files": [
+    "dist/**/*",
+    "nuxt.js"
+  ],
+  "scripts": {
+    "clean": "yarn run rimraf dist",
+    "build:dev": "yarn clean && yarn rollup --config --environment BUILD:development",
+    "build": "yarn clean && yarn rollup --config --environment BUILD:production",
+    "watch": "yarn build:dev -w",
+    "lint": "yarn eslint --ext .ts,.js,.vue src"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "@vue/compiler-sfc": "^3.0.11",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "postcss": "^8.2.15",
+    "prettier": "^2.3.0",
+    "prettier-eslint": "^12.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.47.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.32.12",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintIgnore": [
+    "**/*.d.ts"
+  ]
+}
