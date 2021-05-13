@@ -2,7 +2,7 @@
 
 Este es un template para crear una libreria de componentes vue compatible con:
 
-- vue
+- vue 2.x
 - tree shaking
 - sass (scss)
 - nuxt (tree shaking/components)
